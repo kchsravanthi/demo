@@ -24,7 +24,7 @@ public class HelloController {
 
     @PostMapping("/hello/create")
     public Employee createEmployee(@RequestBody Employee emp) {
-
+        System.out.println("test the controller");
         return helloService.saveOrUpdate(emp);
 
     }
